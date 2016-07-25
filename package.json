@@ -1,0 +1,14 @@
+{
+  "name": "rpc-client",
+  "version": "1.0.0",
+  "description": "AMQP Controller for RPC Client",
+  "main": "rpc-client.js",
+  "scripts": {},
+  "author": {
+    "name": "Don Burgess",
+    "email": "don@db3dev.com",
+    "github": "https://github.com/db3dev",
+    "url": "db3dev.com"
+  },
+  "license": "MIT"
+}
