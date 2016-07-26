@@ -1,5 +1,5 @@
 {
-  "name": "rpc-client",
+  "name": "rabbitmq-rpc-client",
   "version": "1.0.0",
   "description": "AMQP (RabbitMQ) Controller for RPC Client. Asynchronous handling of response using RxJS",
   "main": "index.js",
