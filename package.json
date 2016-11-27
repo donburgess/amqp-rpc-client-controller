@@ -1,7 +1,7 @@
 {
-  "name": "rabbitmq-rpc-client",
-  "version": "1.0.1",
-  "description": "AMQP (RabbitMQ) Controller for RPC Client. Asynchronous handling of response using RxJS",
+  "name": "@db3dev/rabbitmq-rpc-client",
+  "version": "1.0.0",
+  "description": "RabbitMQ Controller for RPC Client. Asynchronous handling of response using RxJS",
   "main": "index.js",
     "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
     "AMQP",
     "RabbitMQ",
     "Controller",
-    "RPC"
+    "RPC",
+    "rxjs"
   ],
   "license": "MIT",
   "dependencies": {
