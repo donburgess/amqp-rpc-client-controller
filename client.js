@@ -22,7 +22,7 @@ module.exports = class RPC_Client {
     }
 
     connect() {
-        if(this.uri === 0) {
+        if(!this.uri) {
             return Rx.Observable.throw(new Error('Uri must be defined in order to start connection'));
         }
         
