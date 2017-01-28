@@ -6,11 +6,12 @@ This client makes use of RxJs Observables for connection and response events.
 # Connecting Without Subscriptions
 ```
 // Require Client Module
-var RPC = require('rpc-client');
+var Client = require('@db3dev/rabbitmq-rpc-client').Client,
+    Config = require('@db3dev/rabbitmq-rpc-client').Config;
 
 // Configure Client to Connect to RabbitMQ Server
 
-var config = RPC.Config({
+var config = new Config({
     username: 'user',
     password: 'password',
     host: 'example.com',
@@ -18,19 +19,20 @@ var config = RPC.Config({
 });
 
 // Start Client
-var client = RPC.Client(config);
+var client = new Client(config);
 
 // Attempt to connect to server
 client.connect();
 ```
 
-# Connecting With a Subscription
+# Connecting Making Use of a Subscription
 ```
 // Require Client Module
-var RPC = require('rpc-client');
+var Client = require('@db3dev/rabbitmq-rpc-client').Client,
+    Config = require('@db3dev/rabbitmq-rpc-client').Config;
 
 // Configure Client to Connect to RabbitMQ Server
-var config = RPC.Config({
+var config = new Config({
     username: 'user',
     password: 'password',
     host: 'example.com',
@@ -38,7 +40,7 @@ var config = RPC.Config({
 });
 
 // Start Client
-var client = RPC.Client(config);
+var client = new Client(config);
 
 // Attempt to connect to server
 client.connect().subscribe(
@@ -53,7 +55,7 @@ client.connect().subscribe(
 var QUEUENAME = 'api_queue';
 
 // example object RPC server may be looking for
-var message = {join: 'NewUsers'} 
+var message = { join: 'NewUsers' } 
 
 // Send RPC to server and wait for a response to handle
 client.rpcPush(QUEUENAME, message).subscribe(

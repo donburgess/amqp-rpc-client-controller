@@ -1,0 +1,12 @@
+# VS Code #
+.vscode
+
+# Dev #
+*.ts
+!*.d.ts
+*.spec.*
+gulpfile.js
+tslint.js
+tsconfig.json
+node_modules
+example
