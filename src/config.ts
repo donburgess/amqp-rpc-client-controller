@@ -44,11 +44,11 @@ export class Config {
     }
 
     public set port(input: number) {
-        if (typeof input !== 'string') {
+        if (typeof input !== 'number') {
             throw new Error('port should be a number value');
         }
 
-        this._port = typeof(input) === 'number' ? input : 5672;
+        this._port = input || 5672;
     }
 
     public set vhost(input: string) {

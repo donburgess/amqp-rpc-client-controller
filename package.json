@@ -1,6 +1,6 @@
 {
   "name": "@db3dev/rabbitmq-rpc-client",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "RabbitMQ Controller for RPC Client. Asynchronous handling of response using RxJS",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
